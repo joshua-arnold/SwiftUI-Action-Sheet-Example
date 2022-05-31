@@ -6,6 +6,10 @@ An example of how to build a reusable action sheet in SwiftUI.
 
 ## Usage
 
+It's as simple as calling `.actionSheet` on any SwiftUI `View`.
+
+It's very similar to using `.fullscreenCover` or `.sheet` if you've used those before.
+
 ```swift
 struct ContentView: View {
     
@@ -28,7 +32,7 @@ struct ContentView: View {
     
     var body: some View {
         button
-            .actionSheet(isPresented: $isPresented) {
+            .actionSheet(isPresented: $isPresented) { // Call `.actionSheet`
                 VStack {
                     Text("I'm an action sheet")
                         .padding()
