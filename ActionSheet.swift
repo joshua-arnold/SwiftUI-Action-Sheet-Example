@@ -85,11 +85,7 @@ struct ActionSheet<Content: View>: View {
             }
         }
     }
-    
-    private func test(val: CGFloat) {
-        print(val)
-    }
-    
+
     // MARK: - Helper
     
     /// Presents the action sheet
