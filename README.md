@@ -7,11 +7,41 @@ An example of how to build a reusable action sheet in SwiftUI.
 ## Usage
 
 ```swift
-var body: some View {
-    content
-        .actionSheet(isPresented: $isPresented) { // Presents an action sheet when `isPresented` is set to true
-            Text("I'm an action sheet!")
-        }
+struct ContentView: View {
+    
+    // MARK: - Properties
+    
+    @State private var isPresented: Bool = false
+    
+    // MARK: - Content
+    
+    private var button: some View {
+        Button(
+            action: {
+                isPresented = true
+            },
+            label: {
+                Text("Show action sheet").padding()
+            }
+        )
+    }
+    
+    var body: some View {
+        button
+            .actionSheet(isPresented: $isPresented) {
+                VStack {
+                    Text("I'm an action sheet")
+                        .padding()
+                    Image(systemName: "questionmark")
+                        .fixedSize()
+                        .frame(height: 100)
+                    Button("Dismiss") {
+                        isPresented = false
+                    }
+                    .padding(48.0)
+                }
+            }
+    }
 }
 ```
 
