@@ -2,7 +2,7 @@
 
 An example of how to build a reusable action sheet in SwiftUI.
 
-<img src="img/example.gif" width="250" height="250"/>
+<img src="img/example.gif" width="250" height="auto"/>
 
 ## Usage
 
