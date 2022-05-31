@@ -2,7 +2,7 @@
 
 An example of how to build a reusable action sheet in SwiftUI.
 
-![An example of the action sheet.](img/example.gif)
+<img src="img/example.gif" width="250" height="250"/>
 
 ## Usage
 
@@ -21,7 +21,9 @@ Check `ActionSheet.swift` for the source code, although here is a brief rundown 
 
 ### 1. First, we use a `ViewModifier` to be able to wrap Views
 
-The `.actionSheet` function you can call on any SwiftUI `View` is built using a `ViewModifier`. It is defined like so:
+The `.actionSheet` function that you can call on any SwiftUI `View` is built using a `ViewModifier`.
+
+It is defined like so:
 
 ```swift
 extension View {
@@ -120,5 +122,5 @@ There are many great tutorials on gestures and bindings in Swift, so I'd recomme
 
 ## Conclusion
 
-I hope this example helps! Feel free to check out my website at https://josharnold.me.
+I hope this example helps! Feel free to check out my website at https://www.josharnold.me.
 
